@@ -202,10 +202,14 @@ img {
 }
 
 .nav__link{ 
-  color :
+  color : var(--text-color);
+  font-size: 1.25rem; 
+  padding : .4rem; 
+  display : flex ; 
+  border-radius: 5rem; 
 }
 /* Active link */
-
+.active-link
 
 /* Change background header */
 
