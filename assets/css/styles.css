@@ -244,7 +244,7 @@ img {
 
 .home__education{ 
   color: var(--text-color);
-  margin-bottom: 2.4rem; 
+  margin-bottom: 2.5rem; 
 }
 
 .home__name{
@@ -269,6 +269,25 @@ img {
   overflow: hidden;   
 }
 
+.home__buttons{ 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home__social,
+.home__scroll{
+  position: absolute;
+}
+
+.home__social{
+  bottom: 5rem;
+  left: 0; 
+  display: flex; 
+  row-gap: .5rem; 
+  
+}
 /*=============== BUTTONS ===============*/
 
 
