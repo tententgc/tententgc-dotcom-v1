@@ -1,3 +1,6 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* Variables */
 :root{ 
     --main-color : #e02f6b; 
@@ -30,6 +33,8 @@ body{
     min-height: 100vh; 
     background-image : linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
     font-size: 16px; 
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
     color : var(--blue-dark);
     line-height:  1.5;
     overflow-x : hidden; 
@@ -48,6 +53,10 @@ body::before{
     z-index: -1;
     opacity: 0.12; 
 }
+
+h1,h2{
+    font-weight: 600;
+}
 img{ 
     max-width: 100%; 
     vertical-align: middle;
@@ -65,8 +74,8 @@ section{
 }
 
 .container{ 
-    background-color: red;
     padding: 0 40px; 
+    width: 100%;
 }
 .row{ 
     display: flex; 
@@ -77,13 +86,10 @@ section{
 } 
 
 /* Home section */
-
-.home-text{ 
-    background-color: blue;
-}
-
-.home-img{ 
-    background-color: green;
+/* ----------------- */
+.home-section{ 
+    display: flex; 
+    padding : 120px 0; 
 }
 
 .home-text, 
@@ -91,7 +97,17 @@ section{
     width: 50%; 
     padding: 15px; 
 }
-
+.home-text p{
+    font-size: 18px; 
+}
+.home-text h1{
+    font-size: 50px; 
+    text-transform: capitalize;
+}
+.home-text h2{
+    font-size: 20px ;
+    text-transform: capitalize;
+}
 .home-img .img-box{ 
     max-width: 360px;
     background-color: var(--white-alpha-25); 
