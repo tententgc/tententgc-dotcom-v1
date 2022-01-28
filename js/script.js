@@ -13,3 +13,18 @@ tabsContainer.addEventListener("click", (e) => {
         
     }
 });
+
+// portfolio
+
+document.addEventListener("click",(e) => {
+    if (e.target.classList.contains("view-project-btn")){
+        togglePortfolioPopup();
+    }
+})
+
+function togglePortfolioPopup(){
+    document.querySelector(".portfolio-popup").classList.toggle("open");
+    document.body.classList.toggle("hide-scrolling");
+}
+
+document.querySelector(".pp-close").addEventListener("click",togglePortfolioPopup);
