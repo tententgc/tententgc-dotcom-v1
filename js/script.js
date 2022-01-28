@@ -1,3 +1,15 @@
+//  Toggle Navbar
+const navToggler = document.querySelector(".nav-toggler");
+navToggler.addEventListener("click",()=>{
+    hideSection();
+    toggleNavber();
+})
+function hideSection(){
+    document.querySelector("section.active").classList.toggle("fade-out");
+}
+function toggleNavber(){
+    document.querySelector(".header").classList.toggle("active");
+}
 
 // About tabs
 const tabsContainer = document.querySelector(".about-tabs"), 
@@ -49,3 +61,5 @@ function portfolioItemDetails(portfolioItem){
     document.querySelector(".pp-body").innerHTML = 
     portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 }
+
+
