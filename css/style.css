@@ -40,7 +40,7 @@ body{
     line-height:  1.5;
     overflow-x : hidden; 
     -webkit-tap-highlight-color: transparent;
-    padding: 5vh 15px;
+    padding: 35px 15px;
 }
 
 body::before{
@@ -77,7 +77,7 @@ ul{
 section{ 
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
-    min-height: 90vh; 
+    min-height: calc(100vh -70px); 
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
 }
@@ -86,6 +86,7 @@ section{
     max-width: 1200px;
     margin: auto;
     transition: all 0.5s ease-in-out;
+    position: relative; 
 }
 
 .main.fade-out{
@@ -188,12 +189,12 @@ button{
 
 /* header */
 .header{
-    background-color: red;
     position: absolute;
     left: 0; 
     top: 0;
     width: 100%; 
     z-index: 1 ; 
+    padding: 20px 0 0; 
 }
 .header .nav-toggler{ 
     width: 50px; 
@@ -206,6 +207,7 @@ button{
     display: flex; 
     align-items: center;
     justify-content: center; 
+    margin: 0 15px; 
 
 }
 .header .nav-toggler span{ 
@@ -238,6 +240,28 @@ button{
 .header .nav-toggler:hover span::after{
     width: 50%;
 }
+
+.header .nav{ 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    height: 100%; 
+    width: 100%;
+    padding: 35px 15px; 
+    visibility: hidden;
+}
+.header .nav-inner{ 
+    min-height: calc(100vh - 70px);
+    max-width: 1200px; 
+    margin: auto;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40); 
+    backdrop-filter: var(--backdrop-filter-blur);
+    padding: 50px 0; 
+    border-radius: 30px;
+}
+
+
 
 /* Home section */
 /* ----------------- */
