@@ -212,6 +212,36 @@ button{
     }
 }
 
+/* background circles */
+
+.bg-circles{ 
+    position:fixed; 
+    top: 0; 
+    height: 100%; 
+    max-width: 1200px; 
+    width: calc(100% - 30px);
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+/* Overlay */
+.overlay{
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    height : 100%; 
+    width: 100%; 
+    background-color: transparent;
+    z-index: 200; 
+    visibility: hidden;
+
+}
+.overlay.active{
+    visibility: visible;
+} 
+
+
+
 /* header */
 .header{
     position: absolute;
@@ -222,7 +252,13 @@ button{
     padding: 20px 0 0; 
 }
 .header.active{
-    
+    position :fixed; 
+    top: 35px;
+    padding :20px 15px;
+}
+.header.active .container{
+    max-width: 1200px; 
+    margin: auto; 
 }
 .header .nav-toggler{ 
     width: 50px; 
@@ -237,7 +273,11 @@ button{
     justify-content: center; 
     margin: 0 15px; 
     z-index: 1;
-
+    transition: opacity 0.5s ease-in-out;
+}
+.header .nav-toggler.hide{ 
+    opacity:0;
+    transition: none;
 }
 .header .nav-toggler span{ 
     height: 2px;
