@@ -13,12 +13,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to tententgc.com
+          tententgc.com
         </h1>
 
         <p className={styles.description}>
-          We have new update{' '}
-          <code className={styles.code}>all code. </code>
+         New Updates{'  '}
+          <code className={styles.code}> coming soon. </code>
         </p>
 
 
